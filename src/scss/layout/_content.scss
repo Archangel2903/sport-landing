@@ -11,7 +11,7 @@
 }
 
 .section-main {
-  min-height: 100vh;
+
 }
 
 .section-decorate {
@@ -55,7 +55,7 @@
 
 .main-content {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -95,7 +95,6 @@
       text-shadow: none;
     }
   }
-
   .btn {
     max-width: 350px;
   }
@@ -154,8 +153,27 @@
     padding: 0 76px;
 
     &__title {
+      margin: 0 auto 20px;
+      line-height: 1;
+    }
+    &__text {
+      margin: 0 0 20px;
+    }
+    &__price {
+      margin: 0 0 30px;
+
+      span {
+        margin: 0 0 -13px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .main-content {
+    &__title {
       margin: 0 auto 40px;
-      line-height: 84px;
+      line-height: 1;
     }
     &__text {
       margin: 0 0 28px;

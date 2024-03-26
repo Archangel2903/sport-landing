@@ -237,6 +237,11 @@
 }
 @include media-breakpoint-up(lg) {
   .neon-text {
+    font-size: 64px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .neon-text {
     font-size: 94px;
   }
 }
