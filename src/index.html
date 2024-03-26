@@ -30,7 +30,8 @@
                 </picture>
 
                 <picture class="section-decorate__pic">
-                    <img src="<%= require('./img/main-pic.png') %>" alt="" title="">
+                    <source media="(min-width: 992px)" srcset="<%= require('./img/main-pic.png') %>">
+                    <img src="<%= require('./img/main-pic_sm.png') %>" alt="" title="">
                 </picture>
             </div>
 

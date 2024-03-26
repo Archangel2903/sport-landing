@@ -71,6 +71,10 @@
   &__logo {
     display: block;
     margin: 0 0 16px;
+
+    img {
+      max-width: 100%;
+    }
   }
   &__title {
     margin: 15px 0 5px;
@@ -139,6 +143,9 @@
       }
     }
     &__pic {
+      width: auto;
+      height: 100vh;
+
       img {
         height: 100vh;
       }
@@ -168,7 +175,6 @@
     }
   }
 }
-
 @include media-breakpoint-up(xl) {
   .main-content {
     &__title {

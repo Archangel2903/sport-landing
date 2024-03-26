@@ -193,7 +193,7 @@
   .btn {
     padding-top: 15px;
     padding-bottom: 16px;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .modal {
@@ -243,5 +243,9 @@
 @include media-breakpoint-up(xl) {
   .neon-text {
     font-size: 94px;
+  }
+
+  .btn {
+    font-size: 28px;
   }
 }
