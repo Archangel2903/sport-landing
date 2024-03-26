@@ -73,15 +73,16 @@
 .neon-text {
   color: #FFFFFF;
   font-family: $font-family-unique;
-  font-size: 94px;
+  font-size: 48px;
+  //line-height: 1;
   text-transform: uppercase;
   text-shadow: 0 0 10px #0075FF, 0 0 10px #0075FF, 0 0 15px #FFFFFF;
 }
 
 .btn {
-  padding-top: 15px;
-  padding-bottom: 16px;
-  font-size: 28px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 18px;
 
   &-primary {
     background: linear-gradient(180deg, #FCC500 -44.53%, #FF7A00 247.5%), #28007D;
@@ -117,9 +118,9 @@
   }
   &-control {
     height: auto;
-    padding: 15px 16px;
+    padding: 9px 10px;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 11px;
     line-height: normal;
   }
 
@@ -127,39 +128,37 @@
     display: block;
     max-width: 364px;
     width: 100%;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
   }
 }
 
 .select2 {
   &-container {
     &--default {
-      .select2-selection {
-        &--single {
-          height: auto;
-          padding: 15px 16px;
-          border-color: #d6d6d6;
-          border-radius: 6px;
+      .select2-selection--single {
+        height: auto;
+        padding: 9px 10px;
+        border-color: #d6d6d6;
+        border-radius: 4px;
 
-          .select2-selection {
-            &__rendered {
-              padding: 0;
-              color: #AEAEAE;
-              font-size: 15px;
-              line-height: normal;
-            }
-            &__arrow {
-              width: 40px;
-              height: 100%;
+        .select2-selection {
+          &__rendered {
+            padding: 0;
+            color: #AEAEAE;
+            font-size: 11px;
+            line-height: normal;
+          }
+          &__arrow {
+            width: 40px;
+            height: 100%;
 
-              b {
-                width: 20px;
-                height: 20px;
-                margin: 0;
-                background: url('../img/chevrone.svg') no-repeat center;
-                border: none;
-                transform: translate(-50%, -50%);
-              }
+            b {
+              width: 20px;
+              height: 20px;
+              margin: 0;
+              background: url('../img/chevrone.svg') no-repeat center;
+              border: none;
+              transform: translate(-50%, -50%);
             }
           }
         }
@@ -175,13 +174,9 @@
       }
     }
 
-    &.select2-container {
-      &--below {
-        .select2-selection {
-          &__rendered {
-            color: #000000;
-          }
-        }
+    &.select2-container--below {
+      .select2-selection__rendered {
+        color: #000000;
       }
     }
   }
@@ -191,6 +186,16 @@
 }
 
 @include media-breakpoint-up(md) {
+  .neon-text {
+    font-size: 86px;
+  }
+
+  .btn {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    font-size: 28px;
+  }
+
   .modal {
     &-title {
       margin: 0 0 45px;
@@ -203,8 +208,35 @@
       margin: 0 0 15px;
     }
     &-control {
+      padding: 15px 16px;
       border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .btn {
+      margin: 60px auto 0;
+    }
+  }
+
+  .select2 {
+    &-container {
+      &--default {
+        .select2-selection--single {
+          padding: 15px 16px;
+          border-radius: 6px;
+
+          .select2-selection {
+            &__rendered {
+              font-size: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+  .neon-text {
+    font-size: 94px;
+  }
+}

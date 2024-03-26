@@ -17,5 +17,13 @@ header.header {
   }
 }
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+  header.header {
+    .logo {
+      img {
+        width: 110px;
+      }
+    }
+  }
+}
 @include media-breakpoint-up(lg) {}
