@@ -1,2 +1,31 @@
 $fonts-path: '../fonts/';
 
+@font-face {
+  font-family: 'NEON LIGHT Display';
+  src: url('#{$fonts-path}NEON LIGHT Display.eot');
+  src: url('#{$fonts-path}NEON LIGHT Display.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}NEON LIGHT Display.woff2') format('woff2'),
+  url('#{$fonts-path}NEON LIGHT Display.woff') format('woff'),
+  url('#{$fonts-path}NEON LIGHT Display.ttf') format('truetype'),
+  url('#{$fonts-path}NEON LIGHT Display.svg#NEON LIGHT Display') format('svg');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fonts-path}Roboto Medium.eot');
+  src: url('#{$fonts-path}Roboto Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Roboto Medium.woff2') format('woff2'),
+  url('#{$fonts-path}Roboto Medium.woff') format('woff'),
+  url('#{$fonts-path}Roboto Medium.ttf') format('truetype'),
+  url('#{$fonts-path}Roboto Medium.svg#Roboto Medium') format('svg');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}

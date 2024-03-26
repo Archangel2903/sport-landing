@@ -8,4 +8,14 @@ header.header {
   min-width: 320px;
   width: 100%;
   z-index: 100;
+
+  .logo {
+    img {
+      margin: 2px auto 0;
+      width: 69px;
+    }
+  }
 }
+
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
