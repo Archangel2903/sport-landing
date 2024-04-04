@@ -7,23 +7,10 @@ header.header {
   position: relative;
   min-width: 320px;
   width: 100%;
+  padding-top: 36px;
   z-index: 100;
 
   .logo {
-    img {
-      margin: 2px auto 0;
-      width: 69px;
-    }
-  }
-}
 
-@include media-breakpoint-up(md) {
-  header.header {
-    .logo {
-      img {
-        width: 110px;
-      }
-    }
   }
 }
-@include media-breakpoint-up(lg) {}

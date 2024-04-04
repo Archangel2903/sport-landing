@@ -1,3 +1,13 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --gold: #F5B832;
+  --blue: #050049;
+  --black-bg: #0c0d12;
+  --gray-bg: #18191E;
+  --selection-bg: #e5c356;
+}
+
 // main colors
 $main-first-color: #0075FF;
 $main-second-color: #007d00;
@@ -9,9 +19,9 @@ $text-color: #fff;
 $input-placeholder-color: #aaa;
 
 // fonts
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 $font-family-custom: 'Arial', sans-serif;
-$font-family-unique: 'NEON LIGHT Display', serif;
+$font-family-unique: 'Monospace', serif;
 
 // font-weight
 $font-weight-medium: 500;

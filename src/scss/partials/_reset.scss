@@ -19,6 +19,11 @@ html, body {
   text-size-adjust: none;
   font-family: $font-family-base;
   font-size: $font-size-default;
+  line-height: 1;
+}
+
+body {
+  background: #060324;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
@@ -138,6 +143,15 @@ input {
         color: transparent;
         transform: rotate3d(1, 0, 0, 90deg);
       }
+    }
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
   }
   &[type="button"], &[type="checkbox"], &[type="image"], &[type="radio"], &[type="reset"], &[type="submit"] {
@@ -306,17 +320,17 @@ iframe {
 ::selection {
   text-shadow: none;
   color: $text-color;
-  background: $main-first-color;
+  background: var(--selection-bg);
 }
 
 ::-moz-selection {
   text-shadow: none;
   color: $text-color;
-  background: $main-first-color;
+  background: var(--selection-bg);
 }
 
 ::-ms-selection {
   text-shadow: none;
   color: $text-color;
-  background: $main-first-color;
+  background: var(--selection-bg);
 }

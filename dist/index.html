@@ -5,13 +5,13 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
     <title>Главная</title>
-<link rel="shortcut icon" href="favicon.ico"><link href="style.8770b27a038a51dcfd3b.min.css" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favicon.ico"><link href="style.a823f6464cb5beeb4e54.min.css" rel="stylesheet"></head>
 <body>
 <!-- BODY -->
 <div class="main-wrapper">
     <!-- HEADER -->
-    <header class="header position-absolute d-lg-none">
-        <div class="container d-flex justify-content-center">
+    <header class="header position-absolute">
+        <div class="container-fluid d-flex">
             <a href="/" class="logo">
                 <picture>
                     <img src="img/logo.svg" alt="" title="">
@@ -24,37 +24,34 @@
     <!-- CONTENT -->
     <main class="content">
         <div class="section section-main">
-            <div class="section-decorate">
-                <picture class="section-decorate__bg">
-                    <img src="img/bg.png" alt="" title="">
-                </picture>
-
-                <picture class="section-decorate__pic">
+            <div class="section-bg">
+                <picture>
                     <source media="(min-width: 992px)" srcset="img/main-pic.png">
-                    <img src="img/main-pic_sm.png" alt="" title="">
+                    <img src="img/main-pic_sm.png" class="section-bg__img" alt="" title="">
                 </picture>
             </div>
 
-            <div class="main-content">
-                <a href="/" class="main-content__logo d-none d-lg-block">
-                    <picture>
-                        <img src="img/logo.svg" alt="" title="">
-                    </picture>
-                </a>
+            <div class="container-fluid">
+                <div class="main-content">
+                    <div class="content-card">
+                        <picture class="content-card__pic">
+                            <img src="img/content-pic.png" alt="" title="">
+                        </picture>
 
-                <p class="main-content__title neon-text">Cashback 10%</p>
+                        <p class="content-card__title">Catch</p>
 
-                <p class="main-content__text">Bet on the
-                    <span class="main-content__name">Indian Premier League</span>
-                    with an EXCLUSIVE
-                    10 % Weekly Cashback
-                </p>
+                        <div class="content-card__body">
+                            <p class="content-card__bonus styler-text">100% BONUS</p>
 
-                <!--                <p class="main-content__text">of up to</p>-->
+                            <p class="content-card__text">on the First Deposit</p>
+                            <p class="content-card__text">up to</p>
 
-                <p class="main-content__price neon-text"><span>of up to</span>5000 INR</p>
+                            <p class="content-card__price styler-text">100 EUR</p>
+                        </div>
 
-                <button type="button" class="btn btn-primary w-100 text-uppercase" data-toggle="modal" data-target="#registration">Play now</button>
+                        <button type="button" class="card-content__btn btn btn-style" data-toggle="modal" data-target="#registration">Play now</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -62,82 +59,80 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="registration" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <p class="modal-title neon-text">registration</p>
+<div class="modal fade" id="registration" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="registrationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content reg-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
 
-            <form action="" method="post" class="form">
-                <div class="form-row">
-                    <fieldset class="col-12">
-                        <label class="form-group w-100">
-                            <select class="select2 js-example-placeholder-single" style="width: 100%">
-                                <option>Chose your country</option>
-                                <option value="01">option 01</option>
-                                <option value="02">option 02</option>
-                                <option value="03">option 03</option>
-                                <option value="04">option 04</option>
-                                <option value="05">option 05</option>
-                            </select>
-                        </label>
+            <div class="registration">
+                <p class="registration__title">100% on 1st DEPOSIT</p>
 
-                        <label class="form-group w-100">
-                            <select class="select2 js-example-placeholder-single" style="width: 100%">
-                                <option>Select city</option>
-                                <option value="01">option 01</option>
-                                <option value="02">option 02</option>
-                                <option value="03">option 03</option>
-                                <option value="04">option 04</option>
-                                <option value="05">option 05</option>
-                            </select>
-                        </label>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Phone</a></li>
+                        <li><a href="#tabs-2">Email</a></li>
+                    </ul>
 
-                        <label class="form-group w-100">
-                            <select class="select2 js-example-placeholder-single" style="width: 100%">
-                                <option>Select currency</option>
-                                <option value="01">EUR (Euro)</option>
-                                <option value="02">USD (Dollar)</option>
-                                <option value="03">GBP (Pound Sterling)</option>
-                                <option value="04">INR (Indian Rupee)</option>
-                                <option value="05">CNY (Yuan)</option>
-                            </select>
-                        </label>
-                    </fieldset>
+                    <div id="tabs-1">
+                        <form action="" method="POST" class="form form-phone">
+                            <label class="form-group">
+                                <input type="tel" id="phone" class="form-control" placeholder=" ">
+                                <input type="button" class="form-input-button" value="send sms">
+                            </label>
 
-                    <fieldset class="col-12 col-lg-6">
-                        <label class="form-group w-100">
-                            <input type="email" class="form-control" placeholder="Your email">
-                        </label>
+                            <label class="form-group">
+                                <input type="number" class="form-control" placeholder=" ">
+                                <span class="form-label">Confirmation code</span>
+                                <input type="button" class="form-input-button" value="confirm">
+                            </label>
 
-                        <label class="form-group w-100">
-                            <input type="text" class="form-control" placeholder="First name *">
-                        </label>
+                            <button type="submit" class="btn btn-style"><span>Register</span></button>
+                        </form>
+                    </div>
 
-                        <label class="form-group w-100">
-                            <input type="text" class="form-control" placeholder="Surname *">
-                        </label>
-                    </fieldset>
+                    <div id="tabs-2">
+                        <form action="" method="POST" class="form form-email">
+                            <fieldset>
+                                <label class="form-group">
+                                    <input type="email" class="form-control" placeholder=" ">
+                                    <span class="form-label">Email</span>
+                                </label>
 
-                    <fieldset class="col-12 col-lg-6">
-                        <label class="form-group w-100">
-                            <input type="tel" class="form-control" placeholder="Your phone number">
-                        </label>
+                                <label class="form-group">
+                                    <input type="text" class="form-control" placeholder=" ">
+                                    <span class="form-label">First name</span>
+                                </label>
 
-                        <label class="form-group w-100">
-                            <input type="password" class="form-control" placeholder="Password *">
-                        </label>
+                                <label class="form-group">
+                                    <input type="text" class="form-control" placeholder=" ">
+                                    <span class="form-label">Surname</span>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <label class="form-group">
+                                    <button type="button" class="form-button-pass">
+                                        <svg><use xlink:href="img/spritemap.svg#sprite-pass-visible"></use></svg>
+                                    </button>
+                                    <input type="password" class="form-control" placeholder=" ">
+                                    <span class="form-label">Password</span>
+                                </label>
+                                <label class="form-group">
+                                    <input type="password" class="form-control" placeholder=" ">
+                                    <span class="form-label">Re-enter your password</span>
+                                </label>
+                            </fieldset>
 
-                        <label class="form-group w-100">
-                            <input type="password" class="form-control" placeholder="Re-enter your password *">
-                        </label>
-                    </fieldset>
+                            <button type="submit" class="btn btn-style"><span>Register</span></button>
+                        </form>
+                    </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary text-uppercase">registration</button>
-            </form>
+                <p class="registration__text">By clicking this button you confirm that you have read and agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy
+                    Policy</a> of the company and confirm that you are of legal age</p>
+            </div>
         </div>
     </div>
 </div>
 <!-- BODY END   -->
-<script type="text/javascript" src="bundle.8770b27a038a51dcfd3b.min.js"></script></body>
+<script type="text/javascript" src="bundle.a823f6464cb5beeb4e54.min.js"></script></body>
 </html>
