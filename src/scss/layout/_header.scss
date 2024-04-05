@@ -11,6 +11,20 @@ header.header {
   z-index: 100;
 
   .logo {
+    img {
+      max-width: 85px;
+      width: 100%;
+    }
+  }
+}
 
+@include media-breakpoint-up(xl) {
+  header.header {
+    .logo {
+      img {
+        max-width: none;
+        width: auto;
+      }
+    }
   }
 }
